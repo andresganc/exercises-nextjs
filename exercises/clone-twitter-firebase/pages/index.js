@@ -1,4 +1,8 @@
+
 import Head from 'next/head'
+import Link from 'next/link'
+
+// Styles
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,6 +14,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+        
+
+        <nav className={styles.nav}>
+          <ul>
+            <label> LOGO </label>
+          </ul>
+
+          <Link href="/"> <a> Inicio </a> </Link>
+          <Link href="/about"> <a> Acerca de </a> </Link>
+          <Link href="/services"> <a> Servicios </a> </Link>
+          <Link href="/contact"> <a> Contactenos </a> </Link>
+        </nav>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
