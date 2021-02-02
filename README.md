@@ -9,3 +9,12 @@ Curso Next.js NC
     - Crear proyecto
 
         $ npx create-next-app my-app
+
+
+### Ejecutar my app
+
+    - Entrar al poyecto y ejecutar
+
+        $ cd my-app
+
+        $ npm run dev
