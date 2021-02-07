@@ -3,8 +3,9 @@ import Link from 'next/link'
 import { Fragment } from 'react'
 
 // Views
-import Navigation from './navigation/navigation'
-
+import StylesCSS from './styles-in-next/styles-css/stylesCSS'
+import StylesModulesCSS from './styles-in-next/styles-module-css/stylesModulesCSS'
+import StylesStyledJSX from './styles-in-next/styles-css-in-js-styled-jsx/StylesCSSInJSStyledJSX'
 
 import styles from '../styles/Home.module.css'
 
@@ -12,7 +13,9 @@ export default function Home() {
   return (
     <Fragment>
 
-      <Navigation />
+      <StylesCSS />
+      <StylesModulesCSS />
+      <StylesStyledJSX />
       
     </Fragment>
     
