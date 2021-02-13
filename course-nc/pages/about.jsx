@@ -7,6 +7,7 @@ import GridContainer from '../components/grid-container/grid-container'
 import FlexContainer from '../components/flex-container/flex-container'
 import Typography from '../components/typography/typography'
 import Avatar from '../components/avatar/avatar'
+import Button from '../components/buttons/button'
 
 // Icons
 import House from '../public/house.svg'
@@ -15,20 +16,21 @@ import House from '../public/house.svg'
 const about = () => {
     return (
         <Fragment>
+            
             {/* Menu */}
             <FlexContainer jcSpaceBetween bgGray700>
                 <FlexContainer>
-                <Typography textWhite bold> LOGO </Typography>  
+                    <Typography textWhite bold> LOGO </Typography>  
                 </FlexContainer>
 
                 <FlexContainer textWhite>
-                <Link href="/"><a><Typography> Inicio </Typography></a></Link>
-                <Link href="/about"><a><Typography> Acerca de </Typography></a></Link>
-                <Link href="/routing-static"><a><Typography> Ruta estatica </Typography></a></Link>
+                    <Link href="/"><Button round> Inicio </Button></Link>
+                    <Link href="/about"><Button round> Acerca de </Button></Link>
+                    <Link href="/routing-static"><Button round> Ruta estatica </Button></Link>
                 </FlexContainer>
 
                 <FlexContainer>
-                <Typography textWhite bold> LOGIN </Typography>  
+                    <Typography textWhite bold> LOGIN </Typography>  
                 </FlexContainer>
             </FlexContainer>
 
@@ -46,7 +48,6 @@ const about = () => {
                 <Typography p2 textWhite center> El routing estatico tiene un sistema llamado File System Routing,
                 en el que solo es crear un archivo y luego llamar con el nombre del archivo en Link </Typography> 
             </GridContainer>
-
 
         </Fragment>
     )
