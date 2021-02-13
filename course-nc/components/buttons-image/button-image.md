@@ -1,36 +1,28 @@
 
 # BUTTON
 
-<br>
-
 ## TABLA DE CONTENIDO
 
 
-<br>
 
 ### TYPE
 
-    - Default: Carga los estilos del boton por  
-        Propiedad: default
+#### Round
 
-            Ejemplos:
-            <Button default> A </Button>
+    - Cambia el tipo de boton a un boton mas redondeado
 
-
-    - Round: Boton con borde redondeados
-        Propiedad: round
-
-            Ejemplos:
-            <Button round> A </Button>
+    Ejemplos:
+    <Button round> Guardar </Button>
 
 
-    - Circle: Boton en circulo
-        Propiedad: circle
+#### Circle
 
-            Ejemplos:
-            <Button circle> A </Button>
-            
-<br>
+    - Cambia el tipo de boton a un boton circular
+
+    Ejemplos:
+    <Button circle> A </Button>
+
+
 
 ### COLORS
 
@@ -45,7 +37,6 @@
         <Button bgOrangeA400> Guardar </Button>
         <Button bgDeepOrange900> Guardar </Button>
 
-<br>
 
 #### Color de letra
 
@@ -56,14 +47,3 @@
         <Button textWhite> Guardar </Button>
         <Button textLimeA400> Guardar </Button>
         <Button textLightGreenA200> Guardar </Button>
-
-
-<br>
-
-### SHADOW - SOMBRA
-
-    - Pinta el elemento con una sombra
-
-            
-
-
