@@ -10,4 +10,11 @@
 ### Instalacion de dependencias
 
     - npm i styled-components
-    - npm i react-router-dom
+    
+    - npm i next-images
+    
+        Create a next.config.js in your project
+
+        // next.config.js
+        const withImages = require('next-images')
+        module.exports = withImages()

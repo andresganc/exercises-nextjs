@@ -7,35 +7,6 @@ import roboto from '../assets/fonts/fonts'
 // Colors
 import colorsBG from '../assets/colors/colors-bg'
 import colorsText from '../assets/colors/colors-text'
-import {
-    red,
-    pink,
-    purple,
-    deepPurple,
-    indigo,
-    blue,
-    lightBlue,
-    cyan,
-    teal,
-    green,
-    lightGreen,
-    lime,
-    yellow,
-    amber,
-    orange,
-    deepOrange,
-    brown,
-    gray,
-    blueGray,
-    black,
-    white,
-    darkText,
-    lightText,
-    darkIcons,
-    lightIcons
-} from '../assets/colors/colors-system'
-
-
 
 
 // ========================= TYPES ============================
@@ -43,13 +14,28 @@ import {
         font-size: .9rem;
         padding: .5rem 1.5rem;
         border: none;
-        border-radius: .2rem;
         cursor: pointer;
         outline: none;
         transition: .2s;
 
         &:hover {
-                background-color: ${ blue[400] };
+                background-color: #03A9F4;
+                //background-color: rgba(255, 255, 255, .1)
+        }
+
+    `
+    
+    const buttonDefault = css `
+        font-size: .9rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: .1rem;
+        cursor: pointer;
+        outline: none;
+        transition: .2s;
+
+        &:hover {
+                background-color: #03A9F4;
                 //background-color: rgba(255, 255, 255, .1)
         }
 
@@ -65,7 +51,7 @@ import {
         transition: .2s;
 
         &:hover {
-            background-color: ${ blue[400]};
+            background-color: #03A9F4;
             //background-color: rgba(255, 255, 255, .1)
         }
 
@@ -81,12 +67,17 @@ import {
         transition: .2s;
 
         &:hover {
-                background-color: ${ blue[400] };
+                background-color: #03A9F4;
                 //background-color: rgba(255, 255, 255, .1)
         }
 
     `
 // ========================= TYPES ============================
+
+
+// ========================= SHADOW =============================
+const Shadow = css ` box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.1); `
+
 
 
 
@@ -97,29 +88,20 @@ const Button = styled.button `
 
     /* Button base*/
     ${ buttonBase } 
+
+
+    // TYPE
+    ${ props => props.default && css ` ${ buttonDefault } `}
+    ${ props => props.round && css ` ${ buttonRound } `}
+    ${ props => props.circle && css ` ${ buttonCircle } `}
+
+    // SHADOW    
+    ${ props => props.shadow && css ` ${ Shadow } `}
+
     
     /* Colors */
     ${ colorsBG }
     ${ colorsText }
-
-    
-    
-    // TYPE
-    ${ props => props.default && css `    
-        ${ buttonBase }
-    `}
-
-    ${ props => props.round && css `    
-        ${ buttonRound }
-    `}
-
-
-    ${ props => props.circle && css `    
-        ${ buttonCircle }
-    `}
-    
-
- 
 `
 
 export default Button;

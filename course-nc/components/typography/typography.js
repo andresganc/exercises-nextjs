@@ -7,79 +7,33 @@ import roboto from '../assets/fonts/fonts'
 // Colors
 import colorsBG from '../assets/colors/colors-bg'
 import colorsText from '../assets/colors/colors-text'
-import {
-    red,
-    pink,
-    purple,
-    deepPurple,
-    indigo,
-    blue,
-    lightBlue,
-    cyan,
-    teal,
-    green,
-    lightGreen,
-    lime,
-    yellow,
-    amber,
-    orange,
-    deepOrange,
-    brown,
-    gray,
-    blueGray,
-    black,
-    white,
-    darkText,
-    lightText,
-    darkIcons,
-    lightIcons
-} from '../assets/colors/colors-system'
 
 
 // ========================= TYPES ============================
-    const textBase = css `
-        font-size: 1rem;
-    `
-
-    const textH1 = css `
-        font-size: 2.2rem; 
-    `
-
-    const textH2 = css `
-        font-size: 1.9rem; 
-    `
-
-    const textH3 = css `
-        font-size: 1.6rem; 
-    `
-
-    const textH4 = css `
-        font-size: 1.3rem; 
-    `
-
-    const textH5 = css `
-        font-size: 1rem; 
-    `
-
-    const textH6 = css `
-        font-size: .7rem; 
-    `
-
-    const textP1 = css `
-        font-size: 1.2rem; 
-        color: ${ gray[600] };
-    `
-
-    const textP2 = css `
-        font-size: 1rem;
-        color: ${ gray[600] } 
-    `
-
-    const textP3 = css `
-        font-size: .8rem;
-        color: ${ gray[600] } 
-    `
+    const textBase = css ` font-size: 1rem; `
+    const textH1 = css ` font-size: 2.2rem; `
+    const textH2 = css ` font-size: 1.9rem; `
+    const textH3 = css ` font-size: 1.6rem; `
+    const textH4 = css ` font-size: 1.3rem; `
+    const textH5 = css ` font-size: 1rem; `
+    const textH6 = css ` font-size: .7rem; `
+    const textP1 = css ` font-size: 1.2rem; `
+    const textP2 = css ` font-size: 1rem; `
+    const textP3 = css ` font-size: .8rem; `
 // ========================= TYPES ============================
+
+
+// ========================= FONT WEIGHT ============================
+    const fontWeightLighter = css ` font-weight: lighter `
+    const fontWeightNormal = css ` font-weight: normal `
+    const fontWeightBold = css ` font-weight: bold; `
+
+
+// ========================= TEXT ALING CENTER ============================
+    const textCenter = css `
+        text-align: center;
+    `
+
 
 
 const Typography = styled.p `
@@ -108,10 +62,12 @@ const Typography = styled.p `
     // =========== TYPE ===========
 
     // =========== WIDTH ============
-    ${ props => props.lighter && css ` font-weight: lighter `}
-    ${ props => props.normal && css ` font-weight: normal `}
-    ${ props => props.bold && css ` font-weight: bold `}
+    ${ props => props.lighter && css ` ${ fontWeightLighter } `}
+    ${ props => props.normal && css ` ${ fontWeightNormal } `}
+    ${ props => props.bold && css ` ${ fontWeightBold } `}
 
+    // =========== CENTER ============
+    ${ props => props.center && css ` ${ textCenter } ` }
     
 
 
