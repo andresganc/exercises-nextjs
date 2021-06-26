@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: #303135;
+    width: 100%;
+    position: fixed;
+    height: 8%;
+    bottom: 0%;
+    z-index: 100;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
+}
+
+.iconStyle {
+    width: 1.3rem;
+    margin: 0.5rem 1rem;
+}
+
+.iconStyle:hover {
+    filter: brightness(60%);
+}
+
+.iconStyle {
+    transition: filter 0.5s;
+}
