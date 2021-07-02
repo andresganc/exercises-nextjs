@@ -17,6 +17,7 @@
     "@babel/polyfill": "^7.12.1",
     "@types/cors": "^2.8.10",
     "cors": "^2.8.5",
+    "glob-parent": "^6.0.0",
     "isomorphic-unfetch": "^3.1.0",
     "next": "^11.0.1",
     "react": "^17.0.2",
