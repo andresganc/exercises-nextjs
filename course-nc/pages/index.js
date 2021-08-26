@@ -1,11 +1,6 @@
 
 import { Fragment } from 'react'
 import Head from 'next/head'
-<<<<<<< HEAD
-
-// NC Components
-import Prueba01 from '../components/prueba/prueba-01'
-=======
 import Link from 'next/link'
 
 // NC Components
@@ -19,7 +14,6 @@ import Button from '../components/buttons/button'
 import House from '../public/house.svg'
 
 
->>>>>>> 5ed2a71a2743c2c140fffa56863b9200e07ee027
 
 export default function Home() {
   return (
@@ -41,14 +35,6 @@ export default function Home() {
       </section>
 
 
-<<<<<<< HEAD
-      <footer>
-        <h2> ESTE ES EL FOOTER DE NEXT </h2>
-      </footer>
-      
-    </div>
-    
-=======
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -97,6 +83,5 @@ export default function Home() {
 
     </Fragment>
 
->>>>>>> 5ed2a71a2743c2c140fffa56863b9200e07ee027
   )
 }
