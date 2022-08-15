@@ -1,13 +1,10 @@
 
-import React, { Fragment } from 'react'
 import Link from 'next/link'
 
 // NC Components
-import GridContainer from '../../components/grid-container/grid-container'
-import FlexContainer from '../../components/flex-container/flex-container'
-import Typography from '../../components/typography/typography'
-import Avatar from '../../components/avatar/avatar'
-import Button from '../../components/buttons/button'
+import Div from '../components/div'
+import H2 from '../components/h2'
+import Button from '../components/button'
 
 // Icons
 import House from '../../public/house.svg'
@@ -16,39 +13,36 @@ import House from '../../public/house.svg'
 const navigation = () => {
     return (
         <Fragment>
-            
-            {/* Menu */}
-            <FlexContainer jcSpaceBetween bgGray700>
-                <FlexContainer>
-                    <Typography textWhite bold> LOGO </Typography>  
-                </FlexContainer>
 
-                <FlexContainer textWhite>
+            <Div displayFlex jcSpaceBetween bgGray700>
+                <Div displayFlex>
+                    <H2 textWhite bold> LOGO </H2>
+                </Div>
+
+                <Div displayFlex textWhite>
                     <Link href="/"><Button round> Inicio </Button></Link>
                     <Link href="/about"><Button round> Acerca de </Button></Link>
                     <Link href="/routing-static"><Button round> Ruta estatica </Button></Link>
-                </FlexContainer>
+                </Div>
 
-                <FlexContainer>
-                <Typography textWhite bold> LOGIN </Typography>  
-                </FlexContainer>
-            </FlexContainer>
+                <Div displayFlex>
+                    <H2 textWhite bold> LOGIN </H2>
+                </Div>
+            </Div>
 
             {/* Header */}
-            <GridContainer bgBlue600 center >
-                <Avatar src={House} circle sizeXXL/>
-                <Typography h2 textWhite bold center> Static & Dinamic Routing </Typography>
-                <Typography h3 textOrange600 bold center> ROUTING STATIC PAGE </Typography>
-            </GridContainer>
+            <Div displayGrid bgBlue600 center >
+                <H2 h2 textWhite bold center> Static & Dinamic Routing </H2>
+                <H2 h3 textOrange600 bold center> HOME PAGE </H2>
+            </Div>
 
             {/* Section */}
-            <GridContainer bgGray400 center >
-                <Typography h4 textWhite bold center> Static Routing </Typography>
-                <Typography p2 textWhite center> Pagina cargada con routing statico - El archivo fue creado en una carpeta llamada
-                 con el mismo nombre de la ruta y el archivo llamdo index. </Typography>
-                <Typography p2 textWhite center> El routing estatico tiene un sistema llamado File System Routing,
-                en el que solo es crear un archivo y luego llamar con el nombre del archivo en Link </Typography>
-            </GridContainer>
+            <Div displayGrid bgGray400 center >
+                <H2 h4 textWhite bold center> Static Routing </H2>
+                <H2 p2 textWhite center> Page index cargada automaticamente </H2>
+                <H2 p2 textWhite center> El routing estatico tiene un sistema llamado File System Routing,
+                    en el que solo es crear un archivo y luego llamar con el nombre del archivo en Link </H2>
+            </Div>
 
         </Fragment>
     )

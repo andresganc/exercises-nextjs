@@ -1,6 +1,4 @@
 
-
-
 import { css } from 'styled-components'
 
 // Colors System
@@ -34,9 +32,9 @@ import {
 
 const colorsBG = css `
 
-    // ============================== COLORS =================================
+    /* ============================== COLORS ================================= */
     /* White */
-    ${ props => props.gbWhite && css ` background: ${ white }; `}
+    ${ props => props.bgWhite && css ` background: ${ white }; `}
     
     /* Black */
     ${ props => props.bgBlack && css ` background: ${ black }; `}
@@ -347,7 +345,7 @@ const colorsBG = css `
     
 
     
-    // ============================== COLORS =================================
+    /* ============================== COLORS ================================= */
 
 `;
 
