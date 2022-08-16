@@ -2,14 +2,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-// NC Components
+// NC Components Base
 import Div from '../components/div'
-import H2 from '../components/h2'
+import H4 from '../components/h4'
 import Button from '../components/button'
 
-// Course NC
-import LinkBasic from '../01-basic/link/link-basic.tsx'
-
+// Menu
+import Menu from './_menu'
 
 export default function Home() {
   return (
@@ -19,26 +18,17 @@ export default function Home() {
         <title> Next </title>
       </Head>
 
-      <main>
-
-        <LinkBasic />
-
-      </main>
-
-      <section>
-
-      </section>
-
-
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-
       <body>
 
-        
+        <main>
+
+        <Div displayFlex jcCenter>
+          <H4> COURSE NC - NEXTJS </H4>
+        </Div>
+
+        <Menu />
+
+        </main>
 
       </body>
 

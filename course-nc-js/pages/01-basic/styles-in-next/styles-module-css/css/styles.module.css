@@ -1,0 +1,19 @@
+
+.div {
+    background-color: violet;
+    height: 100px;
+}
+
+.h2 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.button {
+    background-color: turquoise;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
